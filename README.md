@@ -1,16 +1,50 @@
-# React + Vite
+# FUN Lab Finder (2026年度版) 🎓✨
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**「102ページの研究テーマ資料、全部読むのは大変じゃないですか？」**
 
-Currently, two official plugins are available:
+FUN Lab Finderは、公立はこだて未来大学の膨大な卒業研究テーマ一覧（情報システムコース）から、あなたの興味にぴったりの研究室を直感的なスワイプ操作で見つけるためのマッチングアプリです。
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## スクリーンショット
+![スクリーンショット](screenshot.png)
 
-## React Compiler
+## 🚀 デモ
+[こちらからアプリを試せます](https://ayaniimi213.github.io/lab-finder/)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🌟 主な特徴
+- **直感的なUI**: Tinderスタイルのスワイプ操作で、提示されるキーワードに「興味がある（右）」か「興味がない（左）」を直感的に選択。
+- **46研究室を網羅**: コース内教員だけでなく、コース外の関連教員も含めた全46研究室のデータを収録。
+- **マッチングアルゴリズム**: スワイプデータに基づき、研究室ごとのマッチ度をスコア化。上位5つの研究室を、一致したキーワードと共に提示。
+- **モバイルフレンドリー**: PCはもちろん、スマホからでも快適に操作可能。
 
-## Expanding the ESLint configuration
+## 🛠 使用技術
+- **Frontend**: React (Vite)
+- **Styling**: Tailwind CSS (v4)
+- **Animation**: Framer Motion
+- **Icons**: Lucide React
+- **Deployment**: GitHub Pages
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📊 データについて
+本アプリで使用しているデータは、公立はこだて未来大学 教務委員会発行の「2026年度卒業研究テーマ一覧（情報システムコース）」より抽出したものです。102ページにわたるPDFから、各研究室の特徴を表すキーワードを独自に抽出・整理して使用しています。
+
+## 💻 ローカルでの開発方法
+
+```bash
+# リポジトリをクローン
+git clone https://github.com/<あなたのユーザー名>/lab-finder.git
+
+# フォルダに移動
+cd lab-finder
+
+# 依存関係のインストール
+npm install
+
+# 開発サーバーの起動
+npm run dev
+```
+
+## 📝 開発の背景
+学生のTinder美奈鯛名サービスを作りたいというアイディアから、それなら研究室決定の時にも使えるのではという話になり、昼休みの30分クオリティでとりあえず作ってみました。
+
+## 👤 作成者
+Ayahiko Niimi
+公立はこだて未来大学
